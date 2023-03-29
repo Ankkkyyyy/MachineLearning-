@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Web App</title>
+</head>
+<body style="background:#042743;" >
+
+    <h1 style='background:#CDD4DD;'>NLP App </h1>
+
+    <h3 style='background:#CDD4DD;'> Login Here </h3>
+
+
+    {% if message  %}
+    <p style='color:green;' > {{ message }}  </p>
+    {% endif  %}
+
+
+    <form action="/perform_login" method="post" style='background:#CDD4DD;'>
+ 
+        <label>Email: </label>
+        <br>
+        <input type="email" name='user_email'> 
+        <br>
+        <label>Password: </label>
+        <br>
+        <input type="password" name='user_password' > 
+        <br>
+        <br>
+        <input type="submit" value='Login'>
+
+        <p>Not a member? <a href="/register"> Register Here </a>  </p>
+
+    </form>
+
+</body>
+</html>
