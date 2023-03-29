@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<div class="main-body">
+		<nav id="navbar">
+			<header><a class='Head' href="/">AnalyaticsHub</a>  </header>
+			<a  href="#Intro" class="nav-link">
+				Get Started</a>
+			<a  href="#Object" class="nav-link">
+				Team Record Endpoint</a>
+                <a href="#Seasonwinners" class="nav-link">
+                    Season Winners Endpoint</a>
+            <a href="#venues" class="nav-link">
+                    Venues Endpoint</a>
+            <a href="#batsmanRuns" class="nav-link">
+            All Batsman Runs Record Endpoint</a>
+
+            <a href="#noofsix" class="nav-link">
+                No. of Six by Batsman  Endpoint</a>
+            <a href="#powerhitter" class="nav-link">
+                Power Hitter  Endpoint</a>
+                <a href="#teamatvenues" class="nav-link">
+                    Team At Venues  Endpoint</a>
+			<a href="#Inheritance" class="nav-link">
+				Team Vs Team Endpoint</a>
+			<a href="#Polymorphism" class="nav-link">
+				Batsman Record</a>
+			<a href="#batsmanvsall" class="nav-link">
+				Batsman Vs All Teams</a>
+		
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="Intro">
+				<header>
+					Get Started
+				</header>
+				<p>
+					C++ is a general purpose programming
+					language and widely used now a days '
+					for competitive programming. It has
+					imperative, object-oriented and generic
+					programming features. C++ runs on lots of
+					platform like Windows, Linux, Unix, Mac etc.
+					C++ is an efficient
+					and powerful language and finds wide use
+					in various GUI platforms, 3D graphics and
+					real-time simulations. Because of the
+					inclusion of rich function libraries,
+					working in C++ becomes simpler and
+					convenient than C. Being object-oriented
+					programming like Java, C++ provides
+					the support of inheritance, polymorphism,
+					encapsulation, etc. Unlike C, C++ allows
+					exception handling and function overloading.
+				</p>
+				<p>he “Hello World” program is the first
+					step towards learning any programming
+					language and also one of the simplest
+					programs you will learn. All you have
+					to do is display the message “Hello World”
+					on the screen.
+					<br><br>Let us now look at the program :<br>
+				</p>
+				<code>
+                    <br>
+                    http://127.0.0.1:5000/api/teams
+                    <br>
+                    <br>
+                    <br>
+				</code>
+				<br>
+				<p>It will return each team of IPL as a JSON Data.
+					<br> The main pillars of Object Oriented
+					Programming are :
+				</p>
+                <code class='jsonn' >
+                    <br>
+                    {  <br>
+                        <br>
+                        "teams": [
+                        <br>
+                          "Rajasthan Royals", <br>
+                          "Gujarat Lions", <br>
+                          "Deccan Chargers", <br>
+                          "Chennai Super Kings", <br>
+                          "Punjab Kings", <br>
+                          "Delhi Capitals", <br>
+                          "Royal Challengers Bangalore", <br>
+                          "Lucknow Super Giants", <br>
+                          "Rising Pune Supergiants", <br>
+                          "Pune Warriors", <br>
+                          "Rising Pune Supergiant", <br>
+                          "Kings XI Punjab", <br>
+                          "Gujarat Titans", <br>
+                          "Delhi Daredevils", <br>
+                          "Kolkata Knight Riders", <br>
+                          "Kochi Tuskers Kerala", <br>
+                          "Sunrisers Hyderabad", <br>
+                          "Mumbai Indians" <br>
+                        ]
+                        <br> <br>
+                      }
+                    <br>
+                    <br>
+                    <br>
+				</code>
+            </section>
+                <br> <br>
+
+
+                <section class="main-section" id="Seasonwinners">
+                    <header>
+                        Season Winners 
+                    </header>
+                    <p>
+                        The capability of a class to derive
+                        properties and characteristics from
+                        another class is called Inheritance.
+                        Inheritance is one of the most important
+                        feature of Object Oriented Programming.
+                        Sub Class: The class that inherits
+                        properties from another class
+                        is called Sub class or Derived Class.
+                        Super Class: The class whose properties
+                        are inherited by sub class is called Base
+                        Class or Super class. Using inheritance, we
+                        have to write the functions only one time
+                        instead of three times as we
+                        have inherited rest of the three classes
+                        from base class(Vehicle).
+                    </p>
+                
+    
+                    <code>
+                        <br>
+                        http://127.0.0.1:5000/api/seasonwinner
+                        <br>
+                        <br>
+                        <br>
+                    </code>
+    
+
+                     <p>Output: </p>
+                    <code class='jsonn' >
+                        <br>
+                         <br>
+                            <br>
+                          
+                            {  <br>  <br>
+                                "WinningTeam": <br> <br> {  
+                                    <br> <br>
+                                  "2007/08": "Rajasthan Royals",
+                                  "2009": "Deccan Chargers",
+                                  "2009/10": "Chennai Super Kings",
+                                  "2011": "Chennai Super Kings",
+                                  "2012": "Kolkata Knight Riders",
+                                  "2013": "Mumbai Indians",
+                                  "2014": "Kolkata Knight Riders",
+                                  "2015": "Mumbai Indians",
+                                  "2016": "Sunrisers Hyderabad",
+                                  "2017": "Mumbai Indians",
+                                  "2018": "Chennai Super Kings",
+                                  "2019": "Mumbai Indians",
+                                  "2020/21": "Mumbai Indians",
+                                  "2021": "Chennai Super Kings",
+                                  "2022": "Gujarat Titans"
+                                  <br> <br>
+                                }  <br>  <br>
+                              }  
+                            <br> <br>
+                        
+                        <br>
+                        <br>
+                        <br>
+                    </code>
+    
+    
+    
+    
+    
+    
+    
+                </section>
+
+
+                <br> <br>
+
+                <section class="main-section" id="Object">
+                    <header>
+                        Team Record 
+                    </header>
+                    <p>
+                        The capability of a class to derive
+                        properties and characteristics from
+                        another class is called Inheritance.
+                        Inheritance is one of the most important
+                        feature of Object Oriented Programming.
+                        Sub Class: The class that inherits
+                        properties from another class
+                        is called Sub class or Derived Class.
+                        Super Class: The class whose properties
+                        are inherited by sub class is called Base
+                        Class or Super class. Using inheritance, we
+                        have to write the functions only one time
+                        instead of three times as we
+                        have inherited rest of the three classes
+                        from base class(Vehicle).
+                    </p>
+                
+    
+                    <code>
+                        <br>
+                        http://127.0.0.1:5000/api/teamrecord?team=<span style='color:darkblue;'>type team name here </span>
+                        <br>
+                        <br>
+                        <br>
+                    </code>
+    
+                   <p>Example :</p>
+    
+    
+                    <code>
+                        <br>
+                        http://127.0.0.1:5000/api/teamrecord?team=Chennai%20Super%20Kings<br>
+                        <br>
+                        <br>
+                    </code>
+                     <p>Output: </p>
+                    <code class='jsonn' >
+                        <br>
+                         <br>
+                            <br>
+                          
+                            {  <br>  <br>
+                                "No result": "0", <br>
+                                "Title Won ": "4", <br>
+                                "Total matches Lost": "87", <br>
+                                "total matches played": "208", <br>
+                                "total matches won": "121" <br> <br>
+                              }
+                            <br> <br>
+                        
+                        <br>
+                        <br>
+                        <br>
+                    </code>
+    
+    
+    
+    
+    
+    
+    
+                </section>
+    
+				
+		
+
+            <br> <br> 
+
+   
+
+        
+			<section class="main-section" id="venues">
+				<header>
+		         	Venues
+				</header>
+				<p>
+					The word polymorphism means having many
+					forms. In simple words, we can define
+					polymorphism as the ability of a message
+				
+					<br>
+					<b>In C++ polymorphism is mainly
+						divided into two types:</b>
+					<br> 1. Compile time Polymorphism<br>
+					2. Runtime Polymorphism
+				</p>
+
+				<p>Compile time polymorphism: This type of
+					polymorphism is achieved by function
+					overloading or operator overloading.
+					<br> Runtime polymorphism: This type
+					of polymorphism is achieved by
+					Function Overriding.
+				</p>
+
+
+                <code>
+                    <br>
+                    http://127.0.0.1:5000/api/venues
+                    <br>
+                    <br>
+                    <br>
+                </code>
+                 <p>Output: </p>
+                <code class='jsonn' >
+                    <br>
+                     <br>
+                        <br>
+                      
+                       {   <br> <br>
+  "Venue":  <br> <br> {   <br> <br>
+    "Abu Dhabi": "Sheikh Zayed Stadium",
+    "Ahmedabad": "Sardar Patel Stadium, Motera",
+    "Bangalore": "M Chinnaswamy Stadium",
+    "Bengaluru": "M.Chinnaswamy Stadium",
+    "Bloemfontein": "OUTsurance Oval",
+    "Cape Town": "Newlands",
+    "Centurion": "SuperSport Park",
+    "Chandigarh": "Punjab Cricket Association Stadium, Mohali",
+    "Chennai": "MA Chidambaram Stadium, Chepauk",
+    "Cuttack": "Barabati Stadium",
+    "Delhi": "Feroz Shah Kotla",
+    "Dharamsala": "Himachal Pradesh Cricket Association Stadium",
+    "Dubai": "Dubai International Cricket Stadium",
+    "Durban": "Kingsmead",
+    "East London": "Buffalo Park",
+    "Hyderabad": "Rajiv Gandhi International Stadium, Uppal",
+    "Indore": "Holkar Cricket Stadium",
+    "Jaipur": "Sawai Mansingh Stadium",
+    "Johannesburg": "New Wanderers Stadium",
+    "Kanpur": "Green Park",
+    "Kimberley": "De Beers Diamond Oval",
+    "Kochi": "Nehru Stadium",
+    "Kolkata": "Eden Gardens",
+    "Mumbai": "Dr DY Patil Sports Academy",
+    "Nagpur": "Vidarbha Cricket Association Stadium, Jamtha",
+    "Navi Mumbai": "Dr DY Patil Sports Academy, Mumbai",
+    "Port Elizabeth": "St George's Park",
+    "Pune": "Subrata Roy Sahara Stadium",
+    "Raipur": "Shaheed Veer Narayan Singh International Stadium",
+    "Rajkot": "Saurashtra Cricket Association Stadium",
+    "Ranchi": "JSCA International Stadium Complex",
+    "Sharjah": "Sharjah Cricket Stadium",
+    "Visakhapatnam": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+    "nan": "Sharjah Cricket Stadium"
+    <br> <br>
+  }
+   <br> <br>
+}
+                        <br> <br>
+                    
+                    <br>
+                    <br>
+                    <br>
+                </code>
+			</section>
+
+<br> <br>
+
+
+
+        <section class="main-section" id="batsmanRuns">
+            <header>
+                All Batsman Runs
+            </header>
+            <p>
+                Object-oriented programming – As the name
+                suggests uses objects in programming.
+                Object-oriented programming aims to
+                implement real-world entities like
+        
+            </p>
+            <p><b>Object : </b>An Object is an identifiable
+                entity with some characteristics and behavior.
+                An Object is an instance of a Class. When a
+                class is defined, no memory is allocated but
+                when it is instantiated (i.e. an
+                object is created) memory is allocated.
+                <br>
+                <b>Class : </b>The building block of C++ that
+                leads to Object-Oriented programming is a Class.
+                It is a user-defined data type, which holds its
+                own data members and member functions, which can
+                be accessed & used by creating an instance
+               
+                speed limits, mileage are their properties.
+            </p>
+
+            <code>
+                <br>
+               http://127.0.0.1:5000/api/batsmanruns   <br>
+                <br>
+                <br>
+            </code>
+
+             <p>Output: </p>
+            <code class='jsonn' >
+                <br>
+                 <br>
+                    <br>
+                 "{  <br>
+                    <br> 'batsman_run': 
+                    
+                    <br>
+                    <br> { 
+                    'V Kohli': 6634, 'S Dhawan': 6244, 'DA Warner': 5883, 'RG Sharma': 5881, 'SK Raina': 5536, 'AB de Villiers': 5181, 'CH Gayle': 4997, 'MS Dhoni': 4978, 'RV Uthappa': 4954, 'KD Karthik': 4377, 'G Gambhir': 4217, 'AT Rayudu': 4190, 'AM Rahane': 4074, 'KL Rahul': 3895, 'SR Watson': 3880, 'MK Pandey': 3657, 'SV Samson': 3526, 'KA Pollard': 3437, 'F du Plessis': 3403, 'YK Pathan': 3222, 'BB McCullum': 2882, 'RR Pant': 2851, 'PA Patel': 2848, 'JC Buttler': 2832, 'SS Iyer': 2780, 'Q de Kock': 2767, 'Yuvraj Singh': 2754, 'V Sehwag': 2728, 'SA Yadav': 2644, 'M Vijay': 2619, 'RA Jadeja': 2502, 'SPD Smith': 2495, 'SE Marsh': 2489, 'DA Miller': 2455, 'JH Kallis': 2427, 'WP Saha': 2427, 'DR Smith': 2385, 'MA Agarwal': 2335, 'SR Tendulkar': 2334, 'GJ Maxwell': 2320, 'N Rana': 2181, 'R Dravid': 2174, 'KS Williamson': 2105, 'AJ Finch': 2092, 'AC Gilchrist': 2069, 'AD Russell': 2039, 'JP Duminy': 2029, 'MEK Hussey': 1977, 'HH Pandya': 1972, 'Shubman Gill': 1900, 'Ishan Kishan': 1870, 'DPMD Jayawardene': 1808, 'RA Tripathi': 1798, 'MK Tiwary': 1695, 'Mandeep Singh': 1692, 'KC Sangakkara': 1687, 'PP Shaw': 1588, 'DJ Bravo': 1560, 'NV Ojha': 1554, 'KK Nair': 1496, 'SS Tiwary': 1494, 'S Badrinath': 1441, 'EJG Morgan': 1406, 'BJ Hodge': 1400, 'SC Ganguly': 1349, 
+                    ............... ( Hit the Api to get all the data )
+                    <br>
+                <br>
+                <br>
+            </code>
+
+
+
+
+        </section>
+
+ <br>  <br>
+
+        <section class="main-section" id="noofsix">
+            <header>
+                No. of Sixes Hitted By Batsman
+            </header>
+            <p>
+                The capability of a class to derive
+                properties and characteristics from
+                another class is called Inheritance.
+                Inheritance is one of the most important
+                feature of Object Oriented Programming.
+                Sub Class: The class that inherits
+                properties from another class
+                is called Sub class or Derived Class.
+                Super Class: The class whose properties
+                are inherited by sub class is called Base
+                Class or Super class. Using inheritance, we
+                have to write the functions only one time
+                instead of three times as we
+                have inherited rest of the three classes
+                from base class(Vehicle).
+            </p>
+        
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/noofsix
+                <br>
+                <br>
+                <br>
+            </code>
+             <p>Output: </p>
+            <code class='jsonn' >
+                <br>
+                 <br>
+                    <br>
+                  
+                    "{ <br> <br> 'CH Gayle': 359, 'AB de Villiers': 253, 'RG Sharma': 241, 'MS Dhoni': 229, 'KA Pollard': 224, 'V Kohli': 219, 'DA Warner': 216, 'SK Raina': 204, 'SR Watson': 190, 'RV Uthappa': 182, 'AD Russell': 175, 'AT Rayudu': 164, 'KL Rahul': 164, 'YK Pathan': 161, 'SV Samson': 158, 'Yuvraj Singh': 149, 'S Dhawan': 137, 'JC Buttler': 135, 'KD Karthik': 134, 'BB McCullum': 130, 'RR Pant': 129, 'GJ Maxwell': 127, 'DR Smith': 117, 'DA Miller': 113, 'HH Pandya': 111, 'N Rana': 111, 'F du Plessis': 109, 'MK Pandey': 106, 'V Sehwag': 106, 'Q de Kock': 106, 'SS Iyer': 99, 'AC Gilchrist': 92, 'MA Agarwal': 91, 'M Vijay': 91, 'RA Jadeja': 90, 'Ishan Kishan': 85, 'SA Yadav': 84, 'AM Rahane': 80, 'JP Duminy': 79,
+                    
+                    <br> <br> ..........(Hit the API to access full data) }
+                    <br> <br>
+                
+                <br>
+                <br>
+                <br>
+            </code>
+        </section>
+
+
+        <br> <br>
+
+        
+        <section class="main-section" id="powerhitter">
+            <header>
+                Death Over Power Hitters
+            </header>
+            <p>
+                The capability of a class to derive
+                properties and characteristics from
+                another class is called Inheritance.
+                Inheritance is one of the most important
+                feature of Object Oriented Programming.
+                Sub Class: The class that inherits
+                properties from another class
+                is called Sub class or Derived Class.
+                Super Class: The class whose properties
+                are inherited by sub class is called Base
+                Class or Super class. Using inheritance, we
+                have to write the functions only one time
+                instead of three times as we
+                have inherited rest of the three classes
+                from base class(Vehicle).
+            </p>
+        
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/powerhitters
+                <br>
+                <br>
+                <br>
+            </code>
+             <p>Output: </p>
+            <code class='jsonn' >
+                <br>
+                 <br>
+                    <br>
+                    "{ <br> <br>  'MS Dhoni': 347, 'KA Pollard': 237, 'AB de Villiers': 218, 'KD Karthik': 190, 'RG Sharma': 168, 'HH Pandya': 143, 'RA Jadeja': 141, 'AD Russell': 137, 'V Kohli': 134, 'YK Pathan': 114, 'AT Rayudu': 106, 'DA Miller': 104, 'DJ Bravo': 102, 'Yuvraj Singh': 89, 'JP Duminy': 88, 'Harbhajan Singh': 86, 'RR Pant': 85, 'SK Raina': 84, 'KL Rahul': 80, 'SPD Smith': 76, 'IK Pathan': 75, 'JA Morkel': 70, 'MP Stoinis': 69, 'SA Yadav': 67, 'MK Tiwary': 65, 'BJ Hodge': 65, 'CH Gayle': 62, 'SV Samson': 62, 'R Tewatia': 61, 'KH Pandya': 61, 'MK Pandey': 61, 'AR Patel': 61, 'SO Hetmyer': 60, 'KM Jadhav': 59, 'DA Warner': 58, 'S Dhawan': 57, 'CH Morris': 56, 'RV Uthappa': 56, 'F du Plessis': 55, 'GJ Maxwell': 54, 'PP Chawla': 52, 'EJG Morgan': 51, 'WP Saha': 50, 'JC Buttler': 48, 'DPMD Jayawardene': 47, 'JP Faulkner': 47, 'R Ashwin': 45, 'JH Kallis': 45, 'KS Williamson': 45, 'SS Tiwary': 45, 'AM Rahane': 45, 'S Badrinath': 42, 'Rashid Khan': 41, 'Y Venugopal Rao': 40, 'N Rana': 40, 'SR Watson': 40, 'STR Binny': 39, 'MC Henriques': 39, 'NV Ojha': 37, 'SS Iyer': 37, 'Mandeep Singh': 37, 'GJ Bailey': 37, 'AD Mathews': 36, 'CL White': 36, 'DJ Hussey': 35, 'SN Khan': 34, 'Shakib Al Hasan': 34, 'DJ Hooda': 34, 'R Parag': 33, 'AM Nayar': 32, 'BCJ Cutting': 31, 'KK Nair': 31, 'V Shankar': 30, 'N Pooran': 30, 'Gurkeerat Singh': 30, 'LRPL Taylor': 29, 'R Bhatia': 29, 'MA Agarwal': 29, 'P Kumar': 29, 'A Symonds': 28, 'P Negi': 28, 'DT Christian': 27, 'RN ten Doeschate': 27, 'AJ Finch': 27, 'Ishan Kishan': 27, 'B Kumar': 26, 'SM Curran': 26, 'LR Shukla': 26, 'NLTC Perera': 25, 'A Mishra': 25, 'R Vinay Kumar': 25, 'MEK Hussey': 24, 'R Dravid': 24, 'TM Dilshan': 23, 'OA Shah': 23, 'PJ Cummins': 23, 'BB McCullum': 23,
+                    
+                    <br> <br> }" (.................Hit the API to Access All Data)
+                    <br> <br>
+                
+                <br>
+                <br>
+                <br>
+            </code>
+        </section>
+
+
+
+        <br>  <br>
+        <section class="main-section" id="teamatvenues">
+            <header>
+                Team At Venues
+            </header>
+            <p>
+                The capability of a class to derive
+                properties and characteristics from
+                another class is called Inheritance.
+                Inheritance is one of the most important
+                feature of Object Oriented Programming.
+                Sub Class: The class that inherits
+                properties from another class
+                is called Sub class or Derived Class.
+                Super Class: The class whose properties
+                are inherited by sub class is called Base
+                Class or Super class. Using inheritance, we
+                have to write the functions only one time
+                instead of three times as we
+                have inherited rest of the three classes
+                from base class(Vehicle).
+            </p>
+        
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/teamatvenue?team=<span style='color:darkblue;'>type your team name here</span>&venue=<span style='color:darkblue;'>type your venue here</span>
+                <br>
+                <br>
+                <br>
+            </code>
+
+            <p>Example :</p>
+
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/teamatvenue?team=Chennai%20Super%20Kings&venue=Chennai <br>
+                <br>
+                <br>
+            </code>
+
+             <p>Output: </p>
+            <code class='jsonn' >
+                <br>
+                 <br>
+                    <br>
+                  
+                    { <br> <br>
+                        "Loss": 21, <br>
+                        "Match Played At this Venue": 56,<br>
+                        "Match Won": 35,<br>
+                        "Win Percentage": 62.5 
+                        <br> <br>
+                      }
+                    <br> <br>
+                
+                <br>
+                <br>
+                <br>
+            </code>
+
+
+
+
+
+
+
+        </section>
+
+
+
+        <br> <br>
+
+
+
+        <section class="main-section" id="Inheritance">
+            <header>
+                Team Vs Team 
+            </header>
+            <p>
+                Object-oriented programming – As the name
+                suggests uses objects in programming.
+                Object-oriented programming aims to
+                implement real-world entities like
+                inheritance, hiding, polymorphism,
+                etc in programming. The main
+                aim of OOP is to bind together the data
+                and the functions that operate on them
+                so that no other part of the code can
+                access this data except that function.
+            </p>
+            <p><b>Object : </b>An Object is an identifiable
+                entity with some characteristics and behavior.
+                An Object is an instance of a Class. When a
+                class is defined, no memory is allocated but
+                when it is instantiated (i.e. an
+                object is created) memory is allocated.
+                <br>
+                <b>Class : </b>The building block of C++ that
+                leads to Object-Oriented programming is a Class.
+                It is a user-defined data type, which holds its
+                own data members and member functions, which can
+                be accessed & used by creating an instance
+                of that class. A class is like a blueprint for
+                an object. For Example: Consider the Class
+                of Cars. There may be many cars with different
+                names and brand but all of them will share
+                some common properties like all of them will
+                have 4 wheels, Speed Limit, Mileage range etc.
+                So here, Car is the class and wheels,
+                speed limits, mileage are their properties.
+            </p>
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/teamvteam?team1=<span style='color:darkblue;'>type team1 name here </span> &team2=<spanstyle='color:darkblue;' >type team2 name here </spanstyle=> 
+                <br>
+                <br>
+                <br>
+            </code>
+
+           <p>Example :</p>
+
+
+            <code>
+                <br>
+                http://127.0.0.1:5000/api/teamvteam?team1=Chennai%20Super%20Kings&team2=Royal%20Challengers%20Bangalore <br>
+                <br>
+                <br>
+            </code>
+             <p>Output: </p>
+            <code class='jsonn' >
+                <br>
+                 <br>
+                    <br>
+                  
+                    {  <br> <br>
+                        "Chennai Super Kings": "19", <br>
+                        "Royal Challengers Bangalore": "10", <br>
+                        "draw": "0",<br>
+                        "total_matches": "29" <br> <br>
+                      }
+                    <br> <br>
+                
+                <br>
+                <br>
+                <br>
+            </code>
+
+
+
+
+        </section>
+			
+
+          <br> <br>
+
+
+			<section class="main-section" id="Polymorphism">
+				<header>
+		         	Batsman Record
+				</header>
+				<p>
+					The word polymorphism means having many
+					forms. In simple words, we can define
+					polymorphism as the ability of a message
+					to be displayed in more than one form.
+					A real-life example of polymorphism, a
+					person at the same time can have
+					different characteristics.
+					Like a man at the same time is a father,
+					a husband, an employee. So the same
+					person posses different behavior in
+					different situations. This is called
+					polymorphism. Polymorphism is considered
+					as one of the important features of Object
+					Oriented Programming.
+					<br>
+					<b>In C++ polymorphism is mainly
+						divided into two types:</b>
+					<br> 1. Compile time Polymorphism<br>
+					2. Runtime Polymorphism
+				</p>
+
+				<p>Compile time polymorphism: This type of
+					polymorphism is achieved by function
+					overloading or operator overloading.
+					<br> Runtime polymorphism: This type
+					of polymorphism is achieved by
+					Function Overriding.
+				</p>
+
+
+                <code>
+                    <br>
+                    http://127.0.0.1:5000/api/batsmanrecord?batter=<span style='color:darkblue;'>type batsman name here </span>  
+                    <br>
+                    <br>
+                    <br>
+                </code>
+    
+               <p>Example :</p>
+    
+    
+                <code>
+                    <br>
+                    http://127.0.0.1:5000/api/batsmanrecord?batter=V%20Kohli <br>
+                    <br>
+                    <br>
+                </code>
+                 <p>Output: </p>
+                <code class='jsonn' >
+                    <br>
+                     <br>
+                        <br>
+                      
+                        { <br> <br>
+                            "Average": "36.651933701657455",<br>
+                            "Batsman ": "V Kohli",<br>
+                            "Fifty": "45",<br>
+                            "Fours": "581",<br>
+                            "Highest Score": "113",<br>
+                            "Hundreds": "5",<br>
+                            "Innings": "215",<br>
+                            "Sixes": "219",<br>
+                            "Strike Rate": "129.2421585817261",<br>
+                            "Total Runs Scored": "6634"<br> <br>
+                          }
+                        <br> <br>
+                    
+                    <br>
+                    <br>
+                    <br>
+                </code>
+			</section>
+
+		<br> <br>
+
+	
+
+			<section class="main-section" id="batsmanvsall">
+				<header>
+					Batsman Vs All Teams
+				</header>
+
+				<p>
+					Data abstraction is one of the most
+					essential and important feature of object
+					oriented programming in C++. Abstraction
+					means displaying only essential information
+					and hiding the details. Data abstraction
+					refers to providing only essential information
+					about the data to the outside world,
+					hiding the background details or implementation.
+					<br> Consider a real life example of a man driving
+					a car. The man only knows that pressing the
+					accelerators will increase the speed of car
+					or applying brakes will stop the car but he
+					does not know about how on pressing accelerator
+					the speed is actually increasing, he does
+					not know about the inner mechanism of the car
+					or the implementation of accelerator, brakes
+					etc in the car. This is what abstraction is.
+				</p>
+
+				<p>
+					<b>Abstraction using Classes:</b> We can
+					implement Abstraction in C++ using classes.
+					Class helps us to group data members and member
+					functions using available access specifiers. A
+					Class can decide which data member will be
+					visible to outside
+					world and which is not.
+					<br>
+					<b>Abstraction in Header files:</b> One
+					more type of abstraction in C++ can be
+					header files. For example, consider the
+					pow() method present in math.h header file.
+					Whenever we need to calculate power of a
+					number, we simply call the
+					function pow() present in the math.h header
+					file and pass the numbers as arguments
+					without knowing the underlying algorithm
+					according to which the function is actually
+					calculating power of numbers.
+					<br><br><b>Advantages of Data Abstraction:
+
+					</b><br> 1. Helps the user to avoid writing
+					the low level code.<br> 2. Avoids code
+					duplication and increases reusability.<br>
+					3. Can change internal implementation of
+					class independently without
+					affecting the user.<br> 4. Helps to
+					increase security of an application or program
+					as only important details are
+					provided to the user.
+				</p>
+
+
+
+                
+                <code>
+                    <br>
+                    http://127.0.0.1:5000/api/batsman-runs-against-all-teams?batsman=<span style='color:darkblue;'>type batsman name here </span> 
+                    <br>
+                    <br>
+                    <br>
+                </code>
+    
+               <p>Example :</p>
+    
+    
+                <code>
+                    <br>
+                    http://127.0.0.1:5000/api/batsman-runs-against-all-teams?batsman=V%20Kohli <br>
+                    <br>
+                    <br>
+                </code>
+                 <p>Output: </p>
+                <code class='jsonn' >
+                    <br>
+                     <br>
+                        <br>
+                      
+                        { <br> <br>
+                            "Chennai Super Kings": 749,
+                            "Deccan Chargers": 306,
+                            "Delhi Capitals": 66,
+                            "Delhi Daredevils": 763,
+                            "Gujarat Lions": 283,
+                            "Kings XI Punjab": 636,
+                            "Kochi Tuskers Kerala": 50,
+                            "Kolkata Knight Riders": 675,
+                            "Mumbai Indians": 628,
+                            "Pune Warriors": 128,
+                            "Rajasthan Royals": 370,
+                            "Rising Pune Supergiant": 83,
+                            "Rising Pune Supergiants": 188,
+                            "Sunrisers Hyderabad": 509
+                            <br> <br>
+                          }
+                        <br> <br>
+                    
+                    <br>
+                    <br>
+                    <br>
+                </code>
+
+
+
+
+
+
+
+			</section>
+
+
+		</main>
+	</div>
+</body>
+
+</html>
