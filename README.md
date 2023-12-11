@@ -40,7 +40,7 @@ Extract Transform Reload ! Remaining
 
 All About Ensemble Techniques
 
-## ML Algos (Self Learning)
+## ML Algos 
 
 Covers all the Famous ML Algorithms
 
