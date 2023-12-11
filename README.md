@@ -1,8 +1,12 @@
-# Machine Learning 
+# Machine Learning and Ensemble Techniques Repository
 
 ## Overview
 
-Machine Learning Library, Covers most of the things about Machine Learning & Ensemble Techniques, it also has some Notes of important topic in English & Hinglish.
+Welcome to the Machine Learning and Ensemble Techniques repository! This project encompasses a diverse set of modules focusing on various aspects of machine learning, ensemble techniques, and related topics this repository has something for you.
+
+This repository not only covers the technical aspects of machine learning and ensemble techniques but also includes notes on important topics in both English and Hinglish.
+
+Feel free to explore and contribute to the content. As time permits, more sets of content will be added, enhancing the repository's value as a learning and reference hub.
 
 ## Table of Contents
 
