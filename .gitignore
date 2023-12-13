@@ -1,3 +1,6 @@
 /API Development using Flask/
 /.virtualenvs/
 /.ipynb_checkpoints/
+
+*.docx
+*.rtf
